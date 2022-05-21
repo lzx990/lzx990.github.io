@@ -205,25 +205,35 @@
 							<ul class='navbar-nav navbar-nav-hover align-items-lg-center'>
 								
 										<li class='nav-item'>
-											<a href='/home' class='nav-link' >
+											<a href='/' class='nav-link' >
 												<i class='ni ni-book-bookmark d-lg-none'></i>
 												<span class='nav-link-inner--text'>首页</span>
 											</a>
 											
 										</li>
 									
-										<li class='nav-item dropdown'>
-											<a href='' class='nav-link' onclick='return false;' data-toggle='dropdown' no-pjax>
+										<li class='nav-item'>
+											<a href='/archives' class='nav-link' >
 												<i class='ni ni-book-bookmark d-lg-none'></i>
-												<span class='nav-link-inner--text'>二级菜单</span>
+												<span class='nav-link-inner--text'>归档</span>
 											</a>
 											
-													<div class="dropdown-menu">
-														
-															<a href='/' class='dropdown-item'>归档</a>
-														
-													</div>
-												
+										</li>
+									
+										<li class='nav-item'>
+											<a href='/friends-link' class='nav-link' >
+												<i class='ni ni-book-bookmark d-lg-none'></i>
+												<span class='nav-link-inner--text'>友链</span>
+											</a>
+											
+										</li>
+									
+										<li class='nav-item'>
+											<a href='/about-me' class='nav-link' >
+												<i class='ni ni-book-bookmark d-lg-none'></i>
+												<span class='nav-link-inner--text'>关于我</span>
+											</a>
+											
 										</li>
 									
 							</ul>
@@ -448,7 +458,7 @@
 			
 			
 				<ul id='leftbar_part1_menu' class='leftbar-menu'>
-					<li class='leftbar-menu-item current'><a href='/'>首页</a></li><li class='leftbar-menu-item'><a href='/archives'>归档</a></li><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>二级菜单</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>三级菜单</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item current'><a href='/'>首页</a></li></ul></li></ul></li>
+					<li class='leftbar-menu-item current'><a href='/'>首页</a></li><li class='leftbar-menu-item'><a href='/archives'>归档</a></li><li class='leftbar-menu-item'><a href='/friends-link'>友链</a></li><li class='leftbar-menu-item'><a href='/about-me'>关于我</a></li>
 				</ul>
 			
 			<div class="card-body text-center leftbar-search-button">
@@ -498,15 +508,19 @@
 									<div class="site-author-links">
 										
 											<div class='site-author-links-item'>
-												<a href="/" rel='noopener' target='_blank'>aaa</a>
+												<a href="https://www.luogu.com.cn/user/426624" rel='noopener' target='_blank'>Luogu</a>
 											</div>
 										
 											<div class='site-author-links-item'>
-												<a href="/" rel='noopener' target='_blank'>bbb</a>
+												<a href="https://space.bilibili.com/600294127" rel='noopener' target='_blank'>B-stack</a>
 											</div>
 										
 											<div class='site-author-links-item'>
-												<a href="/" rel='noopener' target='_blank'>ccc</a>
+												<a href="lzx_david@qq.com" rel='noopener' target='_blank'>Email</a>
+											</div>
+										
+											<div class='site-author-links-item'>
+												<a href="https://hydro.ac/d/lsoj/user/1283" rel='noopener' target='_blank'>Hydro</a>
 											</div>
 										
 									</div>
@@ -517,15 +531,15 @@
 										<ul class='site-friend-links-ul'>
 											
 												<li class='site-friend-links-item'>
-													<a href='/' rel='noopener' target='_blank'>aaa</a>
+													<a href='https://hydro.ac/d/lsoj/' rel='noopener' target='_blank'>LSOJ</a>
 												</li>
 											
 												<li class='site-friend-links-item'>
-													<a href='/' rel='noopener' target='_blank'>bbb</a>
+													<a href='https://www.luogu.com.cn/team/35012' rel='noopener' target='_blank'>L-Dev-Team</a>
 												</li>
 											
 												<li class='site-friend-links-item'>
-													<a href='/' rel='noopener' target='_blank'>ccc</a>
+													<a href='https://www.luogu.com.cn/team/36120' rel='noopener' target='_blank'>LOI</a>
 												</li>
 											
 										</ul>
@@ -772,6 +786,21 @@ Email:&#...
 
 		
 		
+		
+			<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+			<script src="//cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+			<script src="//cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body,{
+						delimiters: [
+							{left: "$$", right: "$$", display: true},
+							{left: "$", right: "$", display: false},
+							{left: "\\(", right: "\\)", display: false}
+						]
+					});
+				});
+			</script>
 		
 
 		
